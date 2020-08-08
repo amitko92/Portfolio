@@ -1,94 +1,72 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+:root{
+  --mainColor:#eaeaea;
+  --secondaryColor:#fff;
 
+  --borderColor:#c1c1c1;
 
+  --mainText:black;
+  --secondaryText:#4b5156;
+}
 
+html, body{
+  padding: 0;
+  margin: 0;
+}
 
+h1, h2, h3, h4, h5, h6, strong{
+  color: var(--mainText);
+}
 
+p, li, span, label, input, textarea{
+  color: var(--mainText);
+}
 
+a{
+  text-decoration: none;
+  color:#17a2b8;
+}
 
+ul{
+  list-style: none;
+}
 
+h1{ font-size: 56px; }
+h2{ font-size: 36px; }
+h3{ font-size: 28px; }
+h4{ font-size: 24px; }
+h5{ font-size: 20px; }
+h6{ font-size: 16px; }
 
+.s1{
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
 
+.s2{
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
 
-/*---Media Queries --*/
-@media (max-width: 992px) {
+.main-container{
+  width: 1200px;
+  margin: 0 auto;
+}
 
+.greeting-wrapper{
+  display: grid;
+  text-align: center;
+  align-content: center;
+  
+  min-height: 10em;
+}
+
+@media screen and (max-width: 1200px){
+  .main-container{
+    width: 95%
   }
-@media (max-width: 768px) {
-  
 }
-@media (max-width: 576px) {
-  
-}
-
-
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
-}
-
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-
-
-
 
 
 
